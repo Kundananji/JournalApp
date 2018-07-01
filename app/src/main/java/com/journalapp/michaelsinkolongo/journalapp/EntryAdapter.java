@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * This TaskAdapter creates and binds ViewHolders, that hold the description and priority of a task,
+ * This EntryAdapter creates and binds ViewHolders, that hold the title and description of an entry,
  * to a RecyclerView to efficiently display data.
  */
 public class EntryAdapter extends RecyclerView.Adapter<EntryAdapter.EntryViewHolder> {
@@ -47,7 +47,7 @@ public class EntryAdapter extends RecyclerView.Adapter<EntryAdapter.EntryViewHol
     private SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
     private SimpleDateFormat timeFormat = new SimpleDateFormat(TIME_FORMAT, Locale.getDefault());
     /**
-     * Constructor for the TaskAdapter that initializes the Context.
+     * Constructor for the EntryAdapter that initializes the Context.
      *
      * @param context  the current Context
      * @param listener the ItemClickListener
@@ -60,7 +60,7 @@ public class EntryAdapter extends RecyclerView.Adapter<EntryAdapter.EntryViewHol
     /**
      * Called when ViewHolders are created to fill a RecyclerView.
      *
-     * @return A new TaskViewHolder that holds the view for each task
+     * @return A new EntryViewHolder that holds the view for each Entry
      */
     @Override
     public EntryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

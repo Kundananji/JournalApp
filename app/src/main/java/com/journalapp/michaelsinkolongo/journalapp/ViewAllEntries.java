@@ -4,24 +4,18 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toolbar;
 
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.journalapp.michaelsinkolongo.journalapp.data.DiaryEntry;
 import com.journalapp.michaelsinkolongo.journalapp.utilities.Logger;
 
-import java.util.Calendar;
 import java.util.List;
 
 import static android.support.v7.widget.DividerItemDecoration.VERTICAL;

@@ -3,7 +3,6 @@ package com.journalapp.michaelsinkolongo.journalapp;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
 import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 
@@ -14,7 +13,6 @@ import com.journalapp.michaelsinkolongo.journalapp.utilities.Logger;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.MonthDay;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
