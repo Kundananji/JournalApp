@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="@string/action_add_entry"
+        android:id="@+id/action_add_entry"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:title="@string/action_go_to_date"
+        android:id="@+id/action_go_to_date"
+        android:orderInCategory="99"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        app:showAsAction="never"
+
+        />
+    <item
+        android:title="@string/action_view_all_entries"
+        android:id="@+id/action_view_all_entries"
+        android:orderInCategory="99"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        app:showAsAction="never"
+
+        />
+
+    <item
+        android:title="@string/action_sign_out"
+        android:id="@+id/action_sign_out"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+
+        />
+
+</menu>
