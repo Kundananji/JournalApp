@@ -8,9 +8,11 @@ import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.journalapp.michaelsinkolongo.journalapp.data.AppDatabase;
 import com.journalapp.michaelsinkolongo.journalapp.data.DiaryEntry;
@@ -97,6 +99,18 @@ public class AddDiaryEntry extends AppCompatActivity {
         Date date = new Date();
         Date upDatedDate = new Date();
         String userId = sharedPreferences.getString("userId",null);
+
+        if(TextUtils.isEmpty(title) || title.trim().length()==0){
+            Toast.makeText(AddDiaryEntry.this,"Sorry, Title cannot be Empty",Toast.LENGTH_LONG).show();
+
+            return;
+        }
+
+        if(TextUtils.isEmpty(body)|| body.trim().length()==0){
+            Toast.makeText(AddDiaryEntry.this,"Sorry, Body cannot be Empty",Toast.LENGTH_LONG).show();
+
+            return;
+        }
 
         if(mEntryId!=DEFAULT_ENTRY_ID){
             if(entry!=null){

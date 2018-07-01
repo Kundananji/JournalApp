@@ -111,6 +111,7 @@ public class ViewEntry extends AppCompatActivity {
          if(diaryEntry == null){
              Toast.makeText(ViewEntry.this,"This entry doesn't exist or has been deleted",Toast.LENGTH_LONG).show();
              finish();
+             return;
          }
         String body = diaryEntry.getBody();
         String title = diaryEntry.getTitle();
